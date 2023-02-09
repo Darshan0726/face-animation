@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgb(230, 230, 4);
+    border: 1px solid black;
+    animation-name: circle;  
+    position: relative;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+.leftEyebrow {
+    width: 28px;
+    height: 12px;
+    border-top: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.rightEyebrow {
+    width: 28px;
+    height: 12px;
+    border-top: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+.leftEye{
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: 70px;
+    left: 105px;
+    animation-name: leftEye;
+    animation-duration: 1s;
+    animation-delay: 6s;
+    overflow: hidden;
+}
+@keyframes leftEye {
+    0%{
+        top: 70px; 
+        height: 30px;
+    }
+    50%{
+        top: 100px;
+        height: 0px;
+    }
+    100%{
+        top: 70px;
+        height: 30px;
+    }
+}
+.eye {
+    height: 13px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    left: 4px;
+    top: 15px;
+}
+
+.rightEye{
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: 70px;
+    left: 205px;
+}
+.eye2 {
+    height: 13px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    left: 4px;
+    top: 15px;
+}
+.nose {
+    border: 1px solid;
+    position: absolute;
+    width: 8px;
+    height: 37px;
+    border-radius: 50%;
+    top: 125px;
+    left: 154px;
+}
+.mouth {
+    position: absolute;
+    border-bottom: 2px solid;
+    width: 70px;
+    height: 30px;
+    border-radius: 50%;
+    top: 172px;
+    left: 122px;
+}
+@keyframes circle {
+    0%{
+        left:0;  
+        transform: rotate(0);
+    }
+    50%{left: calc(100% - 300px);
+        transform: rotate(180deg);
+    }
+    100%{left: 0;
+        transform: rotate(360deg);
+    }
+}
